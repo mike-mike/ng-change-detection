@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./zone-change-detection.component.css']
 })
 export class ZoneChangeDetectionComponent {
-  items: any[] = [{ count: 3 }, { count: 8 }, { count: 15 }];
+  items: any[] = [{ count: 1 }, { count: 2 }, { count: 3 }];
 
   constructor() { 
 
