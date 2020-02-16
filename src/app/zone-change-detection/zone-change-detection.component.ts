@@ -32,4 +32,10 @@ export class ZoneChangeDetectionComponent {
 
     this.items = newItems;
   }
+
+  checkAll() {
+    document.querySelectorAll("input[type=checkbox]").forEach((chk: any) => {
+      chk.checked = true;
+    })
+  }
 }

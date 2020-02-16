@@ -23,4 +23,10 @@ export class OnPushChangeDetectionComponent {
       this.items[i].count++;
     }
   }
+
+  checkAll() {
+    document.querySelectorAll("input[type=checkbox]").forEach((chk: any) => {
+      chk.checked = true;
+    })
+  }
 }

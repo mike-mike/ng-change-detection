@@ -1,4 +1,5 @@
 <div *ngFor="let item of items" class="row">
     <input type="checkbox"> {{item.count}}
 </div>
+<button (click)="checkAll()">Check All</button>
 <button (click)="showStatus()">Show Status</button>
