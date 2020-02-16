@@ -1,0 +1,16 @@
+a{
+    padding:10px;
+    font-size: 20px;
+    cursor: pointer;
+    color:#444;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+.active {
+    color:#ff3300
+}
