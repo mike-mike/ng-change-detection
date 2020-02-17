@@ -1,0 +1,18 @@
+input[type=checkbox]{
+    transform: scale(2);
+}
+
+button {
+    font-size: 28px;
+    margin:10px
+}
+.row{
+    margin:5px;
+    background-color: #ddd;
+    padding:15px;
+}
+
+.title {
+    font-size: 22px;
+    margin-top:20px
+}

@@ -1,0 +1,10 @@
+<div class="title">Without Track By</div>
+<div *ngFor="let item of items" class="row">
+    <input type="checkbox"> {{item.count}}
+</div>
+<div class="title">With Track By</div>
+<div *ngFor="let item of items; trackBy: trackItem" class="row">
+    <input type="checkbox"> {{item.count}}
+</div>
+<button (click)="checkAll()">Check All</button>
+<button (click)="getArray()">Get New Array With Some IDs</button>
