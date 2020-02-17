@@ -5,6 +5,12 @@ a{
     color:#444;
     text-decoration: none;
     font-weight: bold;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding:10px 20px 10px 20px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
 }
 a:hover {
     color:red;
