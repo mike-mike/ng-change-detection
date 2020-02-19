@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -10,7 +10,7 @@ export class OnPushChangeDetectionComponent {
 
   items: any[] = [{ count: 1 }, { count: 2 }, { count: 3 }];
 
-  constructor() {
+  constructor(private cd: ChangeDetectorRef) {
     setInterval(()=>{
       for (let i = 0; i < this.items.length; i++) {
         this.items[i].count++;
@@ -19,9 +19,7 @@ export class OnPushChangeDetectionComponent {
   }
 
   showStatus() {
-    for (let i = 0; i < this.items.length; i++) {
-      this.items[i].count++;
-    }
+    this.cd.detectChanges();
   }
 
   checkAll() {
